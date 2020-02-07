@@ -36,7 +36,7 @@ export function app() {
   }));
 
   // We manually disable view cache to prevent caching bug when switching to a different locale url
-  //server.disable('view cache');
+  server.disable('view cache');
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
